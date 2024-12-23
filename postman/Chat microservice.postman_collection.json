@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "cc1854e9-7b46-471b-863a-ae343e72282b",
+		"name": "Chat microservice",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32608587"
+	},
+	"item": [
+		{
+			"name": "Send message",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzUyNTU1MTcsInVzZXJfZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ1c2VyX2lkIjoxfQ._0Asx_goH_u1mkKD0tBMrShJcuaXTyTr-IiKnDyeMvI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"body\": \"Тестовое сообщение\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/chats/1/send-message",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"chats",
+						"1",
+						"send-message"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List messages",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzUyNTU1MTcsInVzZXJfZW1haWwiOiJhZG1pbkBhZG1pbi5jb20iLCJ1c2VyX2lkIjoxfQ._0Asx_goH_u1mkKD0tBMrShJcuaXTyTr-IiKnDyeMvI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/chats/1/list-messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"chats",
+						"1",
+						"list-messages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
