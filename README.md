@@ -1,7 +1,7 @@
 # Boobook - социальная сеть, домашняя работа курса Otus Highload Architecture (микросервис для обмена сообщений)
 
 
-![Image alt](https://github.com/qoonmax/boobook/blob/main/cover.jpg)
+![Image alt](https://github.com/qoonmax/boobook-chat-microservice/blob/main/cover.jpg)
 
 ### Локальная установка
 1. Склонировать репозиторий;
